@@ -2,6 +2,7 @@ const CST_TOP_Page = 1;
 const CST_Prog_Page = 2;
 const CST_Anser_Page = 3;
 const CST_END_Page = 4;
+const CST_RESET_Page = 5;
 
 let page = 0;
 let problem_data = [];
