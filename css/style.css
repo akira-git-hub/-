@@ -1,0 +1,66 @@
+@charset "UTF-8";
+  #quiz-container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    background-color: #3071a9;
+  }
+
+  .hollow-circle {
+    width: 60px;
+    height: 60px;
+    border: 10px solid red; /* 線を太くする */
+    border-radius: 50%;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  /* バツ */
+  .cross {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .cross::before,
+  .cross::after {
+    content: '';
+    position: absolute;
+    width: 24px; /* 線を太くする */
+    height: 90px;
+    background-color: blue;
+  }
+
+  .cross::before {
+    transform: rotate(45deg);
+  }
+
+  .cross::after {
+    transform: rotate(-45deg);
+  }
+  
